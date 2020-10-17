@@ -2,9 +2,27 @@
 //Sets time at top of page
 $("#currentDay").append(moment().format("MMMM Do YYYY"));
 
-//sets time of day for each row via moments
+//sets time of day for each row via moment, that can be used for the function
 $("#input8").attr("data-time", moment("8:00 am", "h:mm a").format("HH"));
+$("#input9").attr("data-time", moment("9:00 am", "h:mm a").format("HH"));
 
+
+
+
+let currentTime = parseInt(moment().format("HH"));
+
+for (let i = 0; i <= 11; i++) {
+    let schedulerHour = parseInt($("#input" + i).attr("data-time"));
+    if (currentTime > schedulerHour) {
+        $("#input" + i).addClass("past");
+    }
+    if (currentTime === schedulerHour) {
+        $("#input" + i).addClass("present");
+    }
+    if (currentTime < schedulerHour) {
+        $("#input" + i).addClass("future");
+    }
+}
 
 
 
@@ -18,7 +36,7 @@ saveBtn.on('click', function () {
     window.localStorage.setItem("Data Entry", JSON.stringify(entryText))
 
 
-console.log(localStorage)
+    console.log(localStorage)
     /*saveEntry();
     showEntry();
 
