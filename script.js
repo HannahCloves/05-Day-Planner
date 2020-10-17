@@ -2,6 +2,10 @@
 //Sets time at top of page
 $("#currentDay").append(moment().format("MMMM Do YYYY"));
 
+//sets time of day for each row via moments
+
+
+
 
 
 const saveBtn = $(".saveBtn");
