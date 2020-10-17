@@ -3,7 +3,7 @@
 $("#currentDay").append(moment().format("MMMM Do YYYY"));
 
 //sets time of day for each row via moments
-
+$("#input8").attr("data-time", moment("8:00 am", "h:mm a").format("HH"));
 
 
 
