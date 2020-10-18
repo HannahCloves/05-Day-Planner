@@ -9,5 +9,26 @@ To access this page, please use this link https://hannahcloves.github.io/05-Day-
 
 ### Images
 
+Initial load up
+
+![MainPage](/Assets/MainPage.PNG)
+
+Tasks inputted
+
+![TasksInputted](/Assets/TasksInputted.PNG)
+
+Time Passed
+
+![TimePassed](/Assets/TimePassed.PNG)
+
+Time Current
+
+![TimeCurrent](/Assets/TimeCurrent.PNG)
+
+Time Future
+
+![TimeFuture](/Assets/TimeFuture.PNG)
+
+
 
 
